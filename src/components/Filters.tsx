@@ -122,7 +122,7 @@ export default function Filters() {
         </Group>
 
         <Group title={`Size ${activeCounts.size ? `(${activeCounts.size})` : ""}`} k="size">
-          <ul className="grid grid-cols-5 gap-2">
+          <ul className="grid grid-cols-3 gap-2">
             {SIZES.map((s) => {
               const checked = getArrayParam(search, "size").includes(s);
               return (
